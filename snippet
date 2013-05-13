@@ -1,0 +1,41 @@
+var Utils = {
+  q : function(query) {
+      if (documentquerySelectorAll) {
+	 	 	 var res = documentquerySelectorAll(query);
+	 	 } else {
+	 	 	 var d = document,
+	 	 	 a = dstyleSheets[0] || dcreateStyleSheet();
+	 	 	 aaddRule(query,’f:b’);
+	 	 	 for(var l=dall,b=0,c=[],f=llength;b<f;b++) {
+	 	 	 	 l[b]currentStylef && cpush(l[b]);
+	 	 	 	 aremoveRule(0);
+	 	 	 	 var res = c;
+	 	 	 }
+	 	 	 return res;
+	 	 }
+  }
+}
+
+
+/*===================================代码片段=========================================*/
+
+/*
+  判断某一设备是否支持触摸事件
+*/
+
+var hasTouch = 'ontouchstart' in window || 'createTouch' in document;
+
+
+/*
+  异步方式加载图片
+*/
+
+var lazy = Utilsq('[data-src]');
+for (var i = 0; i < lazylength; i++) {
+  var source = lazy[i]getAttribute(‘data-src’);
+
+	var img = new Image();
+	imgsrc = source;
+
+	lazy[i]insertBefore(img, lazy[i]firstChild);
+};
